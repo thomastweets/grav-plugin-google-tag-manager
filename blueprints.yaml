@@ -1,11 +1,11 @@
 name: Google Tag Manager
-version: 0.1.0
-description: It is plugin to use google tag manager.
+version: 0.2.0
+description: A plugin to use google tag manager.
 icon: google
 author:
-  name: So Ni
-  email: bookn.dev@gmail.com
-homepage: https://github.com/so-ni/grav-plugin-google-tag-manager
+  name: Thomas Emmerling
+  email: git@thomasemmerling.de
+homepage: https://github.com/thomastweets/grav-plugin-google-tag-manager
 keywords: grav, plugin, etc
 license: MIT
 dependencies:
@@ -31,6 +31,20 @@ form:
       placeholder: "GTM-XXXXXX"
       validate:
         required: true
+    auth:
+      type: text
+      label: PLUGIN_GRAV_GTM.AUTH
+      help: PLUGIN_GRAV_GTM.AUTH_HELP
+      placeholder: "XXXXXXXXXXXXXXXXXXXXXX"
+      validate:
+        required: false
+    env:
+      type: text
+      label: PLUGIN_GRAV_GTM.ENV
+      help: PLUGIN_GRAV_GTM.ENV_HELP
+      placeholder: "env-1"
+      validate:
+        required: false
 
     domains:
       type: array

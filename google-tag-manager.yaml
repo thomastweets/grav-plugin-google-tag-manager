@@ -1,3 +1,5 @@
 enabled: true
 trackingId: ""              # Tracking ID `REQUIRED`
+auth: ""                    # Authentication (gtm_auth)
+env: ""                     # environment (gtm_preview)
 domains: []                 # Array of domains that needs to be applied
